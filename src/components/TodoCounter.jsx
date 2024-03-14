@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class TodoCounter extends Component {
-  render() {
-    return (
-      <h1>
-        Has completado 3 de 5 Todos
-      </h1>
-    )
-  }
+function TodoCounter({total, completed}) {
+  return (
+    <h1>
+      you have {completed} completed of {total} Task
+    </h1>
+  )
 }
 
 export default TodoCounter

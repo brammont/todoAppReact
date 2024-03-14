@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class TodoItem extends Component {
-  render() {
-    return (
-      <li>
-        <span><p>Llorar con la llorona</p></span>
-      </li>
-    )
-  }
+function TodoItem(props) {
+  return (
+    <li>
+      <span>V</span>
+      <p>{props.text}</p>
+      <span>X</span>
+    </li>
+  );
 }
 
 export default TodoItem
