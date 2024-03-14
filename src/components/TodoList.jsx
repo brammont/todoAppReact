@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class TodoList extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+function TodoList(props) {
+  return (
+    <ul>{props.children}</ul>
+  )
 }
 
 export default TodoList
+
