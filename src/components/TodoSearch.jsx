@@ -1,14 +1,19 @@
-import React, { Component } from 'react'
-import './TodoSearch.css';
+import React from 'react'
 
-export class TodoSearch extends Component {
-  render() {
-    return (
-      <input placeholder='Cortar cebolla'>
-        
-      </input>
-    )
-  }
+function TodoSearch({
+  searchValue,
+  setSearchValue,
+}) {
+  return (
+    <input
+      placeholder="Cortar cebolla"
+      className="TodoSearch"
+      value={searchValue}
+      onChange={(event) => {
+        setSearchValue(event.target.value);
+      }}
+    />
+  );
 }
-
 export default TodoSearch
+
